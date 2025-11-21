@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+// Variables
+$font-main: 'Nunito', Arial, sans-serif;
+$color-bg: #ededed;
+$color-nav-hover: #e60026;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #222;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+// Header
+header {
+  background: $color-bg;
+  padding: 0.5em 0 0.2em 0;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5em;
+
+  img {
+    height: 60px;
+    margin-left: 2em;
+    cursor: pointer;
+  }
+
+  .header-content {
+    flex: 1;
+    text-align: center;
+
+    h1 {
+      margin: 0;
+      font-size: 2.3rem;
+      font-weight: 700;
+      font-family: $font-main;
+    }
+
+    h2 {
+      margin: 0.2em 0 0 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-family: $font-main;
+    }
+  }
+}
+
+// Nav
+nav {
+  background: $color-bg;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.2em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 1.05rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s, font-weight 0.2s;
+    padding: 0.2em 0.5em;
+
+    &:hover {
+      color: $color-nav-hover;
+      font-weight: 700;
+    }
+  }
+}
+
+// Section
+section {
+  min-height: 20em;
+}
+
+// Footer
+footer {
+  margin-top: 2em;
+
+  div {
+    background: $color-bg;
+    text-align: center;
+    padding: 0.7em 0;
+
+    a {
+      display: inline-block;
+      margin: 0 0.5em;
+
+      img {
+        width: 2.2em;
+        vertical-align: middle;
+      }
+      svg {
+        width: 2.2em;
+        vertical-align: middle;
+      }
+    }
+  }
+  p {
+    background: $color-bg;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.4em 0;
+    margin: 0;
+  }
+}
